@@ -1,5 +1,5 @@
 {
-  "name": "solr-to-solr",
+  "name": "solr2solr",
   "author": "David Bashford",
   "contributors": [
     {
@@ -7,15 +7,15 @@
       "email": "dbashford@hotmail.com"
     }
   ],
-  "preferGlobal": "true"
-  "description": "A utility to migrate one Solr index to another, or to craft a new index from an original",
+  "preferGlobal": "true",
+  "description": "Migrate one Solr index to another, and multiply/manipulate the data on the way",
   "version": "0.0.1",
   "bin": {
     "solr2solr": "./bin/solr2solr"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dbashford/solr2solr"
   },
   "keywords": [
     "solr",

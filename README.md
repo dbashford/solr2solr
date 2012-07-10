@@ -1,4 +1,4 @@
-solr2solr - a simple solr migration and test data frabrication tool
+solr2solr - a simple Solr migration and test data frabrication tool
 ============
 
 This tool will query a given Solr index and copy it to another.  Along the way it will give you the opportunity to change field names, drop fields altogether, and fabricate new fields.
@@ -54,4 +54,4 @@ From the same directory you placed the config file, simply execute
 
     $ solr2solr
 
-and the tool will begin copying data.
+and the tool will begin copying data.  It will write to the console each time it goes to fetch another batch of data from Solr.
