@@ -15,16 +15,17 @@ solr2solr is a command line tool and should ideally be installed with `-g`
 
   Copy the [example config file](https://github.com/dbashford/solr2solr/blob/master/config.coffee) from the root of the github repo into a directory on your machine.
 
-  * `from` and `to` are pass through configurations to the [node-solr](https://github.com/gsf/node-solr) library.  These are the defaults:
-  ```js
-  var DEFAULTS = {
-    host: '127.0.0.1',
-    port: '8983',
-    core: '', // if defined, should begin with a slash
-    path: '/solr' // should also begin with a slash
-  }
-  ```
-  * `query` is used to hit the `from` solr for documents.  Leave this at `*:*` if you want to copy everything, or change it to something else if you want to copy a smaller set of documents
+`from` and `to` are pass through configurations to the [node-solr](https://github.com/gsf/node-solr) library.  These are the defaults:
+```
+var DEFAULTS = {
+  host: '127.0.0.1',
+  port: '8983',
+  core: '', // if defined, should begin with a slash
+  path: '/solr' // should also begin with a slash
+}
+```
+
+`query` is used to hit the `from` solr for documents.  Leave this at `*:*` if you want to copy everything, or change it to something else if you want to copy a smaller set of documents
 
 
 ## Execution
