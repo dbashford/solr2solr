@@ -28,7 +28,9 @@ class SolrToSolr
       newDoc = {}
       newDoc[copyField]             = doc[copyField]               for copyField in @config.copy
       newDoc[transform.destination] = doc[transform.source]        for transform in @config.transform
-      newDoc[fab.name]              = fab.fabricate(newDoc, start) for fab       in @config.fabricate
+      for fab in @config.fabricate
+        vals = fab.fabricate(newDoc, start)
+        newDoc[fab.name] = vals if vals?
       start++
       newDoc
 
