@@ -26,8 +26,10 @@ class SolrToSolr
   prepareDocuments: (docs, start) =>
     for doc in docs
       newDoc = {}
-      newDoc[copyField]             = doc[copyField]               for copyField in @config.copy
-      newDoc[transform.destination] = doc[transform.source]        for transform in @config.transform
+      for copyField in @config.copy 
+        newDoc[copyField] = doc[copyField] if doc[copyField]?
+      for transform in @config.transform
+        newDoc[transform.destination] = doc[transform.source] if doc[transform.source]?        
       for fab in @config.fabricate
         vals = fab.fabricate(newDoc, start)
         newDoc[fab.name] = vals if vals?
