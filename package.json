@@ -1,6 +1,7 @@
 {
   "name": "solr2solr",
   "author": "David Bashford",
+  "homepage": "https://github.com/dbashford/solr2solr",
   "contributors": [
     {
       "name": "David Bashford",
@@ -9,7 +10,7 @@
   ],
   "preferGlobal": "true",
   "description": "Migrate one Solr index to another, and multiply/manipulate the data on the way",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": {
     "solr2solr": "./bin/solr2solr"
   },
