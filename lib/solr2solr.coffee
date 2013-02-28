@@ -7,7 +7,7 @@ class SolrToSolr
   go: (@config) ->
     @sourceClient = solr.createClient(@config.from)
     @destClient   = solr.createClient(@config.to)
-    @nextBatch(0)
+    @nextBatch(@config.start)
 
   nextBatch: (start) ->
     console.log "Querying starting at #{start}"
