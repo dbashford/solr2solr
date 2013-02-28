@@ -10,7 +10,7 @@
   ],
   "preferGlobal": "true",
   "description": "Migrate one Solr index to another, and multiply/manipulate the data on the way",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "bin": {
     "solr2solr": "./bin/solr2solr"
   },
