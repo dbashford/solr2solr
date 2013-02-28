@@ -26,6 +26,10 @@ exports.config =
   # factor that in as well
   rows:250
 
+  # the number (0 based) of the first row to fetch.  Useful if a large copy operation fails midway
+  # and you need to start up again as some place other than the first record.
+  start:0
+
   # This'll allow you to multiply your data by simply taking each record, modifying the id field to be
   # unique, and adding it an extra number of times to the index.  numberOfTimes = 2, means that each document
   # will be added to the index 3 times total.
