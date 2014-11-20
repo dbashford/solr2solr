@@ -38,6 +38,9 @@ exports.config =
     idField:'docid'
     numberOfTimes: 2
 
+  # When true copy is ignored and documents are copied verbatim
+  clone: false
+
   # fields to straight copy over
   copy:['docid','title']
 
